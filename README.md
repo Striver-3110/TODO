@@ -1,31 +1,94 @@
-# React & Tailwind CSS Starter Pack
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
+# To-Do App
 
-## Usage
+A simple and intuitive To-Do app that helps users manage their daily tasks efficiently. This project is built using React, Node.js, and MongoDB.
 
-This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+## Features
 
-1. Clone the repository to your local machine.
-    ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
-    ```
+- Add new tasks
+- Edit existing tasks
+- Mark tasks as completed
+- Delete tasks
+- Persistent data storage with MongoDB
 
-1. Install the required packages.
-    ```sh
-    cd react-tailwind-css-starter-pack
-    npm install
-    ```
+## Technologies Used
 
-1. Start the development server.
-    ```sh
-    npm start
-    ```
-1. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
-1. Create your React components and add your styles using Tailwind classes. You can also create new CSS files and import them into your components.
+- **Frontend**: React, JSX, Tailwind CSS
+- **Backend**: Node.js, Express
+- **Database**: MongoDB
+- **Deployment**: (Add your deployment platform here, e.g., Firebase, Heroku, etc.)
+- **Testing**: Jest, React Testing Library
 
-The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
+## Installation
 
-## Contributing
+### Clone the repository:
 
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
+```bash
+git clone https://github.com/Striver-3110/TODO.git
+cd TODO
+```
+
+### Install dependencies:
+
+For the **frontend**:
+```bash
+cd frontend
+npm install
+```
+
+For the **backend**:
+```bash
+cd backend
+npm install
+```
+
+### Environment Variables
+
+You may need to set the following environment variables for the backend (create a `.env` file in the root of your backend directory):
+
+- `DB_URI` = Your MongoDB connection string
+- `PORT` = Port number (default is `5000`)
+
+### Running the App
+
+To run the **frontend**:
+```bash
+cd frontend
+npm start
+```
+
+To run the **backend**:
+```bash
+cd backend
+npm start
+```
+
+### Running Tests
+
+To run the tests for the **frontend**:
+```bash
+cd frontend
+npm test
+```
+
+For the **backend**:
+```bash
+cd backend
+npm test
+```
+
+## CI/CD Pipeline
+
+This project uses **GitHub Actions** for CI/CD, which will run tests and deploy the app to your chosen platform (e.g., Heroku, Firebase) on each push to the `main` branch.
+
+## Contribution
+
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -am 'Add new feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Create a new Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
