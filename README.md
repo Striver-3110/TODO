@@ -1,23 +1,17 @@
 
 # To-Do App
 
-A simple and intuitive To-Do app that helps users manage their daily tasks efficiently. This project is built using React, Node.js, and MongoDB.
+A simple and intuitive To-Do app built using React to manage daily tasks.
 
 ## Features
 
 - Add new tasks
 - Edit existing tasks
-- Mark tasks as completed
 - Delete tasks
-- Persistent data storage with MongoDB
 
 ## Technologies Used
 
 - **Frontend**: React, JSX, Tailwind CSS
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
-- **Deployment**: (Add your deployment platform here, e.g., Firebase, Heroku, etc.)
-- **Testing**: Jest, React Testing Library
 
 ## Installation
 
@@ -30,56 +24,21 @@ cd TODO
 
 ### Install dependencies:
 
-For the **frontend**:
 ```bash
-cd frontend
 npm install
 ```
-
-For the **backend**:
-```bash
-cd backend
-npm install
-```
-
-### Environment Variables
-
-You may need to set the following environment variables for the backend (create a `.env` file in the root of your backend directory):
-
-- `DB_URI` = Your MongoDB connection string
-- `PORT` = Port number (default is `5000`)
 
 ### Running the App
 
-To run the **frontend**:
+To run the app:
+
 ```bash
-cd frontend
 npm start
-```
-
-To run the **backend**:
-```bash
-cd backend
-npm start
-```
-
-### Running Tests
-
-To run the tests for the **frontend**:
-```bash
-cd frontend
-npm test
-```
-
-For the **backend**:
-```bash
-cd backend
-npm test
 ```
 
 ## CI/CD Pipeline
 
-This project uses **GitHub Actions** for CI/CD, which will run tests and deploy the app to your chosen platform (e.g., Heroku, Firebase) on each push to the `main` branch.
+This project uses **GitHub Actions** for CI/CD, which will run tests on each push to the `master` branch.
 
 ## Contribution
 
